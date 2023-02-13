@@ -9,7 +9,7 @@ def init(){
 
 def destroy(){
     print "Closing the Appium server"
-    sh "ps -ef | grep -i 'appium' | awk '{print $2}' | xargs sudo kill -9"
+    //sh "ps -ef | grep -i 'appium' | awk '{print $2}' | xargs sudo kill -9"
     print "Closing All emulators"
-    sh "adb devices | grep 'emulator' | cut -f1 | while read line; do adb -s $line emu kill; done"
+    //sh "adb devices | grep 'emulator' | cut -f1 | while read line; do adb -s $line emu kill; done"
 }
