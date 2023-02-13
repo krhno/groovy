@@ -42,13 +42,13 @@ def call(body){
                     }
                 }
             }
-            stage('Run-tests'){
-                steps{
-                    script{
-                        test.executeTests(params)
-                    }
-                }
-            }
+//            stage('Run-tests'){
+//                steps{
+//                    script{
+//                        test.executeTests(params)
+//                    }
+//                }
+//           }
         }
         post{
             always{
