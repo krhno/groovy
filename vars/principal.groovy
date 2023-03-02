@@ -30,6 +30,7 @@ def call(body){
             }
             stage('get-sourcecode'){
                 steps{
+                    sleep time: 20
                     script{
                         versioning.checkout(params)
                     }
